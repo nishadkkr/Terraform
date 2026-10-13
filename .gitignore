@@ -1,13 +1,12 @@
-# local terraform dir
-.terraform/*
-
-# tf state files
-
+.terraform/
 *.tfstate
 *.tfstate.*
-
-# tf variable files, may include sensitive data
-
 *.tfvars
-
-variables.tf
+!example.tfvars
+crash.log
+*.tfplan
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
